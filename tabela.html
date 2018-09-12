@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <!-- COMENTÁRIOS -->
+    <meta charset="utf-8">
+    <title>Tabela</title>
+</header>
+
+<body>
+  <link href="geral.css" rel="stylesheet">
+  <style type="text/css">
+
+    table, th, td  {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td{
+      padding: : 10px;
+    }
+
+    table{
+      width: 70%;
+    }
+
+    h1{
+      color: red;
+      font-family: arial;
+    }
+
+    .fundo{
+      background-color: blue;
+    }
+
+    p.maior{
+      color: #a2b4c6;
+      text-align: center;
+    }
+
+    tbody tr:hover{
+      background-color: #c6c6c6;
+    }
+
+    tfoot tr:hover{
+      background-color: red;
+    }
+
+    thead tr:hover{
+      background-color: deepskyblue;
+    }
+
+    tr:nth-child(even){
+      background-color: #a9c9c9;
+    }
+
+  </style>
+
+
+
+  <h1>Lista de alunos(as) matriculados na turma</h1>
+  <p class="maior">Aula no laboratório H102</p>
+  <p>Horário da aula: 18:50 - 20:30</p>
+  <table>
+    <caption>Turma de Web</caption>
+    <!--CABEÇALHO-->
+    <thead>
+      <tr>
+        <th>Matrícula</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Curso</th>
+        <th class="fundo">Turma</th>
+      </tr>
+    </thead>
+    <!--DADOS-->
+    <tbody>
+    <tr>
+      <td>1328413</td>
+      <td>Vitor</td>
+      <td>avancini.cabral@gmail.com</td>
+      <td>S.I</td>
+      <td rowspan="3">11</td>
+    </tr>
+
+    <tr>
+      <td>1518907</td>
+      <td>Alguém</td>
+      <td>xxx.xxx@hotmail.com</td>
+      <td>E.C</td>
+    </tr>
+
+    <tr>
+      <td>1728666</td>
+      <td>Ninguém</td>
+      <td>yyy@yahoo.com.br</td>
+      <td>E.E</td>
+    </tr>
+  </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total de Pessoas:  </td>
+        <td colspan="3">3 </td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta charset="utf-8">
+    <title>Introdução ao HTML!</title>
+  </header>
+
+  <body>
+    <h1>Dados do Cadastro</h1>
+
+    <form method="post" action="validar.html">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" placeholder="Nome do Usuário">
+      <br>
+
+      <label for="endereço">Endereço:</label>
+      <input type="text" name="endereço">
+      <br>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" name="telefone" maxlength="13" placeholder="(31)992070352">
+      <br>
+
+      <label for="genero">Gênero</label>
+
+      <input type="radio" id ="feminino" name="genero" value="F">
+      <label for="feminino">Feminino</label>
+
+      <input type="radio" id ="masculino" name="genero"value="M">
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" id ="naobinario" name="genero" value="X">
+      <label for="naobinario">Não Binário</label>
+      <br>
+
+      <label for="area">Áreas de Interesse</label>
+      <input type="checkbox" id="web" name="area[0]"> <label for="web">Desenvolvimento Web</label>
+      <input type="checkbox" id="bd" name="area[1]"> <label for="bd">Banco de Dados</label>
+      <input type="checkbox" id="otim" name="area[2]"> <label for="otim">Otimização</label>
+      <br>
+
+      <label for="cidade">Cidade</label>
+      <select name="cidade">
+        <option value="0">Selecione:</option>
+        <option value="1">João Monlevade</option>
+        <option value="2">Itabira</option>
+        <option value="3">Alvinópolis</option>
+        <option value="3">Belo Horizonte</option>
+        <option value="3">Itaúna</option>
+      </select>
+      <br>
+
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario">
+      <br>
+
+      <label for="senha">Senha</label>
+      <input type="password" name="senha">
+      <br>
+
+      <input type="submit" value="Cadastrar">
+      <input type="reset" value="Limpar">
+    </form>
+
+    <a href="introducao.html" >Voltar</a>
+
+  </body>
+
+
+
+</html>
