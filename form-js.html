@@ -10,30 +10,33 @@
   </script>
 
   <body>
-    <form name="dados">
-      <div class="form-group">
-        <label for="valor1">Valor 1</label>
-        <input type="number" name="valor1" value="">
-      </div>
+    <div class="container-fluid">
+      <form name="dados">
 
-      <div class="form-group">
-        <label for="valor2">Valor 2</label>
-        <input type="number" name="valor2" value="">
-      </div>
+        <div class="form-group" id="grupoV1">
+          <label for="valor1" id="labelV1">Valor 1</label>
+          <input type="text" name="valor1" value="" class="form-control">
 
-      <div class="form-group">
-        <label for="resultado">Resultado</label>
-        <input type="number" name="resultado" value="">
-      </div>
+          <div class="alert alert-danger" style="display: none" id="alertaV1">
+            <span>Informe o primeiro número corretamente!</span>
+          </div>
 
-        <button type="button"class="btn btn-primary" onclick="calcular()">Calcular</button>
+        </div>
 
-      </div>
+        <div class="form-group">
+          <label for="valor2">Valor 2</label>
+          <input type="text" name="valor2" value="" class="form-control">
+        </div>
 
-    </form>
+        <div class="form-group">
+          <label for="resultado">Resultado</label>
+          <input type="text" name="resultado" value="" class="form-control">
+        </div>
 
+          <button type="button"class="btn btn-primary" onclick="calcular()">Calcular</button>
 
-
+        </div>
+      </form>
 
   </body>
 </html>
